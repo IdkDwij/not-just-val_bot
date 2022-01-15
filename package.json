@@ -1,0 +1,16 @@
+{
+  "name": "discordbotjs",
+  "version": "1.0.0",
+  "description": "Custom bot built for not-just-valorant",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/bot.js",
+    "dev": "nodemon ./src/bot.js"
+  },
+  "keywords": [],
+  "author": "IDKDwij",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  }
+}
