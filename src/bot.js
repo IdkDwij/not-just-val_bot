@@ -27,8 +27,11 @@ client.on('messageCreate', (message) => {
     if (cmdName === "thetruth") message.channel.send('Your iphone is a tracking device for the chinese government');
     
     else if(cmdName === "uptime") {
-        seconds = Math.round(process.uptime()) - idksec;
-        message.channel.send('Bot has been on for ' + Math.floor(seconds / 3600) + ' hours ' + Math.floor(seconds / 60) + ' minutes' + ' and ' + seconds + '(ignore it if it is above 60 :P) seconds')
+        seconds = Math.round(process.uptime());
+        var h = Math.floor(seconds / 3600).toString().padStart(2,'0'),
+        m = Math.floor(seconds % 3600 / 60).toString().padStart(2,'0'),
+        s = Math.floor(seconds % 60).toString().padStart(2,'0');
+        message.channel.send('Bot has been on for ' + h + ' hours ' + m + ' minutes' + ' and ' + s + ' seconds')
     }
 })
 
