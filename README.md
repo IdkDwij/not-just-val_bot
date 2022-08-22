@@ -1,13 +1,14 @@
 # Setup
-<h2>Requirments</h2>
-Node.JS<br>
+Requirments
+Node.JS
 #installation
-Make a new folder, unzip this inside that folder,<br>
-edit auth.json and put your bot token inside,<br>
-run requirments.bat to install the stuff required,<br>
-'''
+Make a new folder, unzip this inside that folder,
+edit auth.json and put your bot token inside,
+run requirments.bat to install the stuff required,
+```
+
 npm i
 npm start
-'''
-<br>
+
+```
 I made this because my friend wanted a bot
